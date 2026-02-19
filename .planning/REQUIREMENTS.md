@@ -1,7 +1,7 @@
 # Requirements: Evan's Story Studio
 
 **Defined:** 2026-02-19
-**Core Value:** A child taps three cards and gets a beautiful, personalized bedtime story with illustrations — the full magic loop from pick to read must feel seamless and delightful.
+**Core Value:** A child taps three cards and gets a beautiful, personalized bedtime story with illustrations --- the full magic loop from pick to read must feel seamless and delightful.
 
 ## v1 Requirements
 
@@ -35,7 +35,7 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Image Generation
 
 - [ ] **IMAG-01**: Each story page gets an AI-generated illustration via fal.ai
-- [ ] **IMAG-02**: Images load progressively — text appears immediately, images populate one by one
+- [ ] **IMAG-02**: Images load progressively --- text appears immediately, images populate one by one
 - [ ] **IMAG-03**: When reference photo exists (Evan mode), PuLID model generates face-consistent illustrations
 - [ ] **IMAG-04**: Image prompts include consistent character description across all 5 pages
 
@@ -94,11 +94,11 @@ Deferred to future release. Tracked but not in current roadmap.
 
 | Feature | Reason |
 |---------|--------|
-| Text-to-speech narration | Parent reading aloud IS the bedtime ritual — TTS undermines the product purpose |
+| Text-to-speech narration | Parent reading aloud IS the bedtime ritual --- TTS undermines the product purpose |
 | Branching/interactive stories | Choice points create stimulation; bedtime stories should be calming and linear |
-| User accounts/authentication | Single-device personal use — localStorage is sufficient |
-| Phone/mobile layouts | iPad-only for v1 — reduces layout complexity |
-| Server-side video export | @remotion/bundler incompatible with Next.js — defer to Lambda in v2 |
+| User accounts/authentication | Single-device personal use --- localStorage is sufficient |
+| Phone/mobile layouts | iPad-only for v1 --- reduces layout complexity |
+| Server-side video export | @remotion/bundler incompatible with Next.js --- defer to Lambda in v2 |
 | Real-time collaboration | Single-user bedtime use case |
 | Backend database | No persistence beyond the device needed |
 | COPPA compliance infrastructure | Personal/family use only for v1 |
@@ -109,47 +109,47 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CHAR-01 | — | Pending |
-| CHAR-02 | — | Pending |
-| CHAR-03 | — | Pending |
-| CHAR-04 | — | Pending |
-| CHAR-05 | — | Pending |
-| CHAR-06 | — | Pending |
-| CHAR-07 | — | Pending |
-| STYL-01 | — | Pending |
-| STYL-02 | — | Pending |
-| STYL-03 | — | Pending |
-| STOR-01 | — | Pending |
-| STOR-02 | — | Pending |
-| STOR-03 | — | Pending |
-| STOR-04 | — | Pending |
-| STOR-05 | — | Pending |
-| STOR-06 | — | Pending |
-| IMAG-01 | — | Pending |
-| IMAG-02 | — | Pending |
-| IMAG-03 | — | Pending |
-| IMAG-04 | — | Pending |
-| READ-01 | — | Pending |
-| READ-02 | — | Pending |
-| READ-03 | — | Pending |
-| READ-04 | — | Pending |
-| READ-05 | — | Pending |
-| VIDE-01 | — | Pending |
-| VIDE-02 | — | Pending |
-| VIDE-03 | — | Pending |
-| PWA-01 | — | Pending |
-| PWA-02 | — | Pending |
-| PWA-03 | — | Pending |
-| PWA-04 | — | Pending |
-| PWA-05 | — | Pending |
-| PWA-06 | — | Pending |
-| PWA-07 | — | Pending |
+| CHAR-01 | Phase 3 | Pending |
+| CHAR-02 | Phase 3 | Pending |
+| CHAR-03 | Phase 3 | Pending |
+| CHAR-04 | Phase 5 | Pending |
+| CHAR-05 | Phase 5 | Pending |
+| CHAR-06 | Phase 5 | Pending |
+| CHAR-07 | Phase 5 | Pending |
+| STYL-01 | Phase 3 | Pending |
+| STYL-02 | Phase 2 | Pending |
+| STYL-03 | Phase 3 | Pending |
+| STOR-01 | Phase 2 | Pending |
+| STOR-02 | Phase 2 | Pending |
+| STOR-03 | Phase 2 | Pending |
+| STOR-04 | Phase 2 | Pending |
+| STOR-05 | Phase 2 | Pending |
+| STOR-06 | Phase 2 | Pending |
+| IMAG-01 | Phase 2 | Pending |
+| IMAG-02 | Phase 2 | Pending |
+| IMAG-03 | Phase 5 | Pending |
+| IMAG-04 | Phase 2 | Pending |
+| READ-01 | Phase 4 | Pending |
+| READ-02 | Phase 4 | Pending |
+| READ-03 | Phase 4 | Pending |
+| READ-04 | Phase 4 | Pending |
+| READ-05 | Phase 4 | Pending |
+| VIDE-01 | Phase 6 | Pending |
+| VIDE-02 | Phase 6 | Pending |
+| VIDE-03 | Phase 6 | Pending |
+| PWA-01 | Phase 6 | Pending |
+| PWA-02 | Phase 6 | Pending |
+| PWA-03 | Phase 1 | Pending |
+| PWA-04 | Phase 3 | Pending |
+| PWA-05 | Phase 1 | Pending |
+| PWA-06 | Phase 1 | Pending |
+| PWA-07 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 35 total
-- Mapped to phases: 0
-- Unmapped: 35 (pending roadmap creation)
+- Mapped to phases: 35
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-19*
-*Last updated: 2026-02-19 after initial definition*
+*Last updated: 2026-02-19 after roadmap creation*
