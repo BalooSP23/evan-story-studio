@@ -31,11 +31,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. A Zustand store persists data to localStorage and survives page reload without hydration errors
   4. TypeScript types for Story, Page, Character, and Style are defined and importable
   5. `npm run build` completes without errors
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 01-01: Next.js scaffold with Tailwind v4, fonts, and type system
-- [ ] 01-02: Zustand store with localStorage persistence and starry background component
+- [ ] 01-01-PLAN.md -- Next.js scaffold with Tailwind v4 theme system, fonts (Fredoka + Nunito + Comfortaa), TypeScript types, and i18n infrastructure
+- [ ] 01-02-PLAN.md -- Zustand store with localStorage persistence, animated starry background canvas, and landing page (language picker + title screen)
 
 ### Phase 2: AI Pipeline
 **Goal**: The app can generate a complete 5-page story with illustrations by calling Claude and fal.ai, producing valid structured output with style-appropriate images
