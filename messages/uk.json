@@ -1,0 +1,20 @@
+{
+  "landing": {
+    "greeting": {
+      "morning": "Доброго ранку, {name}",
+      "afternoon": "Доброго дня, {name}",
+      "evening": "Доброго вечора, {name}",
+      "night": "Солодких снів, {name}"
+    },
+    "cta": "Почати Пригоду",
+    "subtitle": "Чарівна пригода чекає на тебе"
+  },
+  "language": {
+    "fr": "Français",
+    "en": "English",
+    "uk": "Українська"
+  },
+  "common": {
+    "settings": "Налаштування"
+  }
+}

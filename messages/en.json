@@ -1,0 +1,20 @@
+{
+  "landing": {
+    "greeting": {
+      "morning": "Good morning, {name}",
+      "afternoon": "Good afternoon, {name}",
+      "evening": "Good evening, {name}",
+      "night": "Sweet dreams, {name}"
+    },
+    "cta": "Begin the Adventure",
+    "subtitle": "A magical adventure awaits"
+  },
+  "language": {
+    "fr": "Français",
+    "en": "English",
+    "uk": "Українська"
+  },
+  "common": {
+    "settings": "Settings"
+  }
+}

@@ -1,26 +1,100 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Dark mode via data attribute (not media query, since user toggles it) */
+@custom-variant dark (&:where([data-mode="dark"], [data-mode="dark"] *));
+
+/* Theme defaults (Mystical & deep) */
+@theme {
+  --color-bg-primary: oklch(0.13 0.03 270);
+  --color-bg-secondary: oklch(0.18 0.04 270);
+  --color-accent-gold: oklch(0.82 0.15 85);
+  --color-accent-purple: oklch(0.68 0.15 290);
+  --color-text-primary: oklch(0.95 0.01 270);
+  --color-text-secondary: oklch(0.75 0.03 270);
+  --color-card-bg: oklch(0.2 0.03 270 / 0.6);
+  --color-glow: oklch(0.82 0.15 85 / 0.3);
+  --color-sky-top: oklch(0.1 0.04 270);
+  --color-sky-bottom: oklch(0.2 0.05 280);
+
+  --font-heading: var(--font-fredoka);
+  --font-body: var(--font-nunito);
+
+  --radius-card: 1rem;
+  --radius-button: 0.75rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Theme preset overrides */
+@layer base {
+  /* Mystical & deep (default -- explicit for clarity) */
+  [data-theme="mystical"] {
+    --color-bg-primary: oklch(0.13 0.03 270);
+    --color-bg-secondary: oklch(0.18 0.04 270);
+    --color-accent-gold: oklch(0.82 0.15 85);
+    --color-accent-purple: oklch(0.68 0.15 290);
+    --color-text-primary: oklch(0.95 0.01 270);
+    --color-text-secondary: oklch(0.75 0.03 270);
+    --color-card-bg: oklch(0.2 0.03 270 / 0.6);
+    --color-glow: oklch(0.82 0.15 85 / 0.3);
+    --color-sky-top: oklch(0.1 0.04 270);
+    --color-sky-bottom: oklch(0.2 0.05 280);
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Dreamy & warm -- warmer tones, softer purples, sunset-like sky */
+  [data-theme="dreamy"] {
+    --color-bg-primary: oklch(0.15 0.02 30);
+    --color-bg-secondary: oklch(0.2 0.03 35);
+    --color-accent-gold: oklch(0.85 0.12 60);
+    --color-accent-purple: oklch(0.72 0.1 320);
+    --color-text-primary: oklch(0.95 0.01 30);
+    --color-text-secondary: oklch(0.75 0.02 30);
+    --color-card-bg: oklch(0.22 0.02 30 / 0.6);
+    --color-glow: oklch(0.85 0.12 60 / 0.3);
+    --color-sky-top: oklch(0.12 0.03 250);
+    --color-sky-bottom: oklch(0.25 0.04 300);
+  }
+
+  /* Magical & vibrant -- vivid purples, brighter golds, deeper sky */
+  [data-theme="magical"] {
+    --color-bg-primary: oklch(0.12 0.05 300);
+    --color-bg-secondary: oklch(0.17 0.06 300);
+    --color-accent-gold: oklch(0.88 0.18 90);
+    --color-accent-purple: oklch(0.6 0.2 280);
+    --color-text-primary: oklch(0.96 0.01 300);
+    --color-text-secondary: oklch(0.78 0.03 300);
+    --color-card-bg: oklch(0.18 0.05 300 / 0.6);
+    --color-glow: oklch(0.88 0.18 90 / 0.35);
+    --color-sky-top: oklch(0.08 0.06 280);
+    --color-sky-bottom: oklch(0.22 0.07 300);
+  }
+
+  /* Light mode overrides */
+  [data-mode="light"] {
+    --color-bg-primary: oklch(0.97 0.005 270);
+    --color-bg-secondary: oklch(0.93 0.01 270);
+    --color-text-primary: oklch(0.15 0.03 270);
+    --color-text-secondary: oklch(0.4 0.03 270);
+    --color-card-bg: oklch(1 0 0 / 0.7);
+    --color-glow: oklch(0.82 0.15 85 / 0.15);
+  }
+
+  /* Ukrainian heading font fallback (Fredoka lacks Cyrillic) */
+  :lang(uk) {
+    --font-heading: var(--font-comfortaa);
   }
 }
 
+/* Base styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), system-ui, sans-serif;
 }

@@ -2,19 +2,19 @@
   "landing": {
     "greeting": {
       "morning": "Bonjour, {name}",
-      "afternoon": "Bon apres-midi, {name}",
+      "afternoon": "Bon après-midi, {name}",
       "evening": "Bonsoir, {name}",
-      "night": "Fais de beaux reves, {name}"
+      "night": "Fais de beaux rêves, {name}"
     },
     "cta": "Commencer l'Aventure",
     "subtitle": "Une aventure magique t'attend"
   },
   "language": {
-    "fr": "Francais",
+    "fr": "Français",
     "en": "English",
-    "uk": "Yкраїнська"
+    "uk": "Українська"
   },
   "common": {
-    "settings": "Parametres"
+    "settings": "Paramètres"
   }
 }
