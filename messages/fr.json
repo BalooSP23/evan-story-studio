@@ -1,0 +1,20 @@
+{
+  "landing": {
+    "greeting": {
+      "morning": "Bonjour, {name}",
+      "afternoon": "Bon apres-midi, {name}",
+      "evening": "Bonsoir, {name}",
+      "night": "Fais de beaux reves, {name}"
+    },
+    "cta": "Commencer l'Aventure",
+    "subtitle": "Une aventure magique t'attend"
+  },
+  "language": {
+    "fr": "Francais",
+    "en": "English",
+    "uk": "Yкраїнська"
+  },
+  "common": {
+    "settings": "Parametres"
+  }
+}
