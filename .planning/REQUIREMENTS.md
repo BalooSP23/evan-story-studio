@@ -59,7 +59,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **PWA-02**: App displays in landscape orientation
 - [ ] **PWA-03**: Animated starry night background with particle canvas
 - [ ] **PWA-04**: Cards have scale-on-press feedback and frosted glass glow effects
-- [ ] **PWA-05**: Typography uses Fredoka One for headings and Nunito for body
+- [x] **PWA-05**: Typography uses Fredoka One for headings and Nunito for body
 - [ ] **PWA-06**: Story, style preference, and reference photo persist in localStorage
 - [ ] **PWA-07**: "New Story" button resets current story and returns to character picker
 
@@ -141,7 +141,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PWA-02 | Phase 6 | Pending |
 | PWA-03 | Phase 1 | Pending |
 | PWA-04 | Phase 3 | Pending |
-| PWA-05 | Phase 1 | Pending |
+| PWA-05 | Phase 1 | Complete |
 | PWA-06 | Phase 1 | Pending |
 | PWA-07 | Phase 4 | Pending |
 
