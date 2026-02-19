@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import { Fredoka, Nunito, Comfortaa } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getLocale } from 'next-intl/server';
+import StoreHydration from '@/components/StoreHydration';
+import ThemeApplicator from '@/components/ThemeApplicator';
+import StarryBackground from '@/components/StarryBackground';
 import './globals.css';
 
 const fredoka = Fredoka({
@@ -46,6 +49,9 @@ export default async function RootLayout({
       className={`${fredoka.variable} ${nunito.variable} ${comfortaa.variable}`}
     >
       <body className="min-h-screen bg-bg-primary text-text-primary antialiased">
+        <StoreHydration />
+        <ThemeApplicator />
+        <StarryBackground />
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
