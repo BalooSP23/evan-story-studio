@@ -10,28 +10,28 @@ See: .planning/PROJECT.md (updated 2026-02-19)
 ## Current Position
 
 Phase: 1 of 6 (Foundation & Design System)
-Plan: 1 of 2 in current phase
-Status: Executing phase 1
-Last activity: 2026-02-19 -- Completed 01-01 scaffold, types, themes, i18n
+Plan: 2 of 2 in current phase
+Status: Phase 1 complete
+Last activity: 2026-02-19 -- Completed 01-02 store, starry background, landing page
 
-Progress: [█░░░░░░░░░] 7%
+Progress: [██░░░░░░░░] 14%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: ~12 min
-- Total execution time: 0.2 hours
+- Total plans completed: 2
+- Average duration: ~8 min
+- Total execution time: 0.3 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 1 - Foundation | 1/2 | 12 min | 12 min |
+| 1 - Foundation | 2/2 | 16 min | 8 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (12 min)
-- Trend: baseline
+- Last 5 plans: 01-01 (12 min), 01-02 (4 min)
+- Trend: accelerating
 
 *Updated after each plan completion*
 
@@ -50,6 +50,10 @@ Recent decisions affecting current work:
 - 01-01: Fredoka for Latin headings with Comfortaa fallback via :lang(uk) for Ukrainian Cyrillic
 - 01-01: next-intl without i18n routing -- cookie-based locale, no URL prefixes
 - 01-01: Default locale is fr (French) since primary user is Evan in France
+- 01-02: Zustand persist with skipHydration to avoid SSR hydration mismatch
+- 01-02: Canvas-based starry background with delta-time animation loop for consistent speed
+- 01-02: Session cookie for locale (no expiry) so language picker shows on every app launch
+- 01-02: RGBA fallback colors for canvas sky gradient (canvas doesn't support oklch natively)
 
 ### Pending Todos
 
@@ -64,5 +68,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-19
-Stopped at: Completed 01-01-PLAN.md
-Resume file: .planning/phases/01-foundation-design-system/01-02-PLAN.md
+Stopped at: Completed 01-02-PLAN.md (Phase 1 complete)
+Resume file: Next phase (Phase 2)
